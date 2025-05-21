@@ -1,0 +1,294 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>7. Desarrollo de las sesiones | Desarrollo de una aplicación web para la gestión del banco de alimentos </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="Eugenia Pérez Martínez" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body class="exe-web-site" id="exe-node-8"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">Desarrollo de una aplicación web para la gestión del banco de alimentos</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Título. Descripción de la Sda</a></li>
+   <li><a href="1_intencin_educativa.html" class="no-ch">1. Intención educativa</a></li>
+   <li><a href="2_elementos_curriculares.html" class="no-ch">2. Elementos curriculares</a></li>
+   <li><a href="3_metodologas_activas.html" class="no-ch">3. Metodologías activas</a></li>
+   <li><a href="4_vinculacin_con_los_proyectos_y_programas_del_centro.html" class="no-ch">4. Vinculación con los proyectos y programas del centro</a></li>
+   <li><a href="5_actividades_complementarias_y_extraescolares.html" class="no-ch">5. Actividades complementarias y extraescolares</a></li>
+   <li><a href="6_atribucin_y_fichero_descargable.html" class="no-ch">6. Atribución y fichero descargable.</a></li>
+   <li id="active"><a href="7_desarrollo_de_las_sesiones.html" class="active no-ch">7. Desarrollo de las sesiones</a></li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="6_atribucin_y_fichero_descargable.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">7. Desarrollo de las sesiones</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id12">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TAREA 1: Presentación del reto y análisis de requisitos del banco de alimentos</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta12_128_2" class="block iDevice_content">
+<div class="exe-text"><p>Temporalización: 1 sesión (2 horas)</p>
+<p><strong>Contenido propuesto</strong></p>
+<ul>
+<li>Presentación introductoria (formato Slides/Canva) sobre la realidad de los bancos de alimentos, retos de digitalización y el proyecto que desarrollará el alumnado.</li>
+<li>Dossier de requisitos funcionales (PDF editable) simulando las necesidades del cliente (registro de usuarios, gestión de productos, seguimiento de donaciones y stock).</li>
+<li>Infografía base (Canva) con roles de usuario y flujos básicos del sistema (donante ↔ banco ↔ receptor).</li>
+</ul>
+<p><strong>Actividades del alumnado</strong></p>
+<ul>
+<li>Leer y analizar el dossier funcional.</li>
+<li>Crear una infografía grupal sobre las necesidades clave detectadas (herramientas: Canva o Genially).</li>
+<li>Realizar un documento resumen con los requisitos funcionales mínimos viables y posibles mejoras.</li>
+<li>Foro de lluvia de ideas (Teams) sobre dudas y ampliaciones posibles del proyecto.</li>
+</ul>
+<p><strong>Material de apoyo</strong></p>
+<ul>
+<li>Video breve sobre “<a href="https://www.youtube.com/watch?v=LmaMa21DRJ0">¿Cómo funcionan los bancos de alimentos?</a>” (YouTube, max. 5 minutos)</li>
+<li><a href="https://es.smartsheet.com/content/project-requirements-templates">Plantilla base para análisis de requisitos (Word/Docs)</a></li>
+</ul>
+<p><strong>Diccionario de términos</strong></p>
+<ul>
+<li>Requisito funcional: Funcionalidad concreta que debe ofrecer un sistema</li>
+<li>MVP (Producto Mínimo Viable): Versión básica de un producto que cumple su función principal</li>
+<li>CRUD: Acrónimo para crear, leer, actualizar y eliminar datos en una app</li>
+</ul>
+<p><strong>Preguntas de repaso</strong></p>
+<ul>
+<li>¿Quiénes son los usuarios del sistema?</li>
+<li>¿Qué operaciones necesita gestionar el banco?</li>
+<li>¿Qué diferencias hay entre requisitos funcionales y no funcionales?</li>
+</ul>
+<p><strong>Soporte digital</strong></p>
+<ul>
+<li>Microsoft Teams: entrega y debate</li>
+<li>Office 365: trabajo colaborativo</li>
+<li>Canva: diseño infográfico</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id13">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TAREA 2: Diseño de la base de datos y arquitectura MVC del sistema</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta13_129_2" class="block iDevice_content">
+<div class="exe-text"><p>Temporalización: 2 sesiones (4 horas)</p>
+<p><strong>Contenido propuesto</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=minaMCUHZno">Ejemplo de diagrama entidad-relación</a></li>
+<li><a href="https://www.youtube.com/watch?v=0jdcUCUjbO0">Tutorial visual (vídeo breve) sobre el patrón MVC en aplicaciones web (YouTube, 6-8 min).</a></li>
+<li><a href="https://hop2croft.wordpress.com/2011/04/28/estructura-basica-de-un-proyecto-con-maven/">Diagrama de estructura de carpetas en un proyecto Java/Spring o Node.</a></li>
+</ul>
+<p><strong>Actividades del alumnado</strong></p>
+<ol>
+<li>Diseñar su modelo de datos en Draw.io (usuarios, productos, donaciones…).</li>
+<li>Especificar claves primarias/foráneas y relaciones (1:N, N:N).</li>
+<li>Crear un borrador de arquitectura MVC del sistema y carpetas del proyecto.</li>
+<li>Validar el diseño con docente o compañeros.</li>
+</ol>
+<p><strong>Material de apoyo</strong></p>
+<ul>
+<li><a href="https://creately.com/blog/es/diagramas/plantillas-de-modelos-de-bases-de-datos/">Plantilla de modelo de datos</a></li>
+<li><a href="https://www.tiracodigo.com/index.php/programacion/mvc/aprender-asp-net-mvc-en-10-sencillos-pasos-y-en-tu-idioma">Guía rápida: “MVC en 10 pasos”</a></li>
+<li><a href="https://www.mindonmap.com/es/blog/drawio-er-diagram/">Vídeo “Cómo crear tu primer diagrama ER en Draw.io”</a></li>
+</ul>
+<p><strong>Diccionario de términos</strong></p>
+<ul>
+<li>Clave primaria: Identificador único para una fila en una tabla</li>
+<li>MVC: Patrón de arquitectura: Modelo, Vista y Controlador</li>
+<li>Diagrama ER: Representación gráfica de entidades y sus relaciones</li>
+</ul>
+<p><strong>Preguntas de repaso</strong></p>
+<ul>
+<li>¿Qué relación hay entre usuarios y donaciones?</li>
+<li>¿Qué elementos se gestionan en la vista, el modelo y el controlador?</li>
+</ul>
+<p><strong>Soporte digital</strong></p>
+<ul>
+<li>Draw.io o Lucidchart: diseño de BD</li>
+<li>Teams/OneNote: entrega y corrección</li>
+<li>Trello: organización de tareas del grupo</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id14">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TAREA 3: Implementación por módulos: usuarios, productos, donaciones, stock</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta14_130_2" class="block iDevice_content">
+<div class="exe-text"><p>Temporalización: 2 sesiones (4 horas)</p>
+<p><strong>Contenido propuesto</strong></p>
+<ul>
+<li>Código ejemplo básico de un CRUD en Spring Boot / Node</li>
+<li>Videotutorial (propio o externo) sobre uso de Postman para pruebas API</li>
+<li>Infografía de buenas prácticas en control de versiones con GitHub</li>
+</ul>
+<p><strong>Actividades del alumnado</strong></p>
+<ol>
+<li>Crear endpoints CRUD para cada entidad.</li>
+<li>Implementar validaciones básicas.</li>
+<li>Probar con Postman y grabar un mini tutorial del uso.</li>
+<li>Subir el código al repositorio GitHub con commits comentados.</li>
+</ol>
+<p><strong>Material de apoyo</strong></p>
+<ul>
+<li><a href="https://www.dariobf.com/crear-endpoint-personalizado-rest-api-wordpress/">Plantilla básica para endpoint REST</a></li>
+<li><a href="https://desarrolloweb.com/articulos/como-usar-postman-probar-api">Guía de uso de Postman</a></li>
+<li><a href="https://blogbibliotecacid.wordpress.com/2018/04/01/que-es-un-repositorio-un-ejemplo-practico-consulta-y-descarga-la-tesis-de-stephen-hawking-desde-el-repositorio-de-la-universidad-de-cambridge/">Ejemplo de repositorio documentado</a></li>
+</ul>
+<p><strong>Diccionario de términos</strong></p>
+<ul>
+<li>Endpoint: Punto de acceso a una funcionalidad de una API</li>
+<li>ORM: Herramienta para mapear objetos y tablas de BD</li>
+<li>Commit: Registro de un cambio realizado en el código en Git</li>
+</ul>
+<p><strong>Preguntas de repaso</strong></p>
+<ul>
+<li>¿Cómo se prueba que una API funciona correctamente?</li>
+<li>¿Por qué es importante usar control de versiones?</li>
+</ul>
+<p><strong>Soporte digital</strong></p>
+<ul>
+<li>IDE local (VS Code, IntelliJ)</li>
+<li>Postman</li>
+<li>GitHub para versionado</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id15">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TAREA 4: Revisión de seguridad, testeo y documentación</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta15_131_2" class="block iDevice_content">
+<div class="exe-text"><p>Temporalización: 2 sesiones (4 horas)</p>
+<p><strong>Contenido propuesto</strong></p>
+<ul>
+<li><a href="https://antoniofernandez.com/documentar-api-swagger/">Ejemplo de archivo Swagger documentado</a></li>
+<li><a href="https://www.youtube.com/watch?v=MnC-XJkg6MQ">Video tutorial sobre uso básico de Swagger/OpenAPI</a></li>
+<li><a href="https://github.com/shieldfy/API-Security-Checklist/blob/master/README-es.md">Check-list de seguridad básica</a></li>
+</ul>
+<p><strong>Actividades del alumnado</strong></p>
+<ol>
+<li>Añadir autenticación (JWT o sesiones)</li>
+<li>Documentar los endpoints con Swagger</li>
+<li>Testear funcionalidades y errores comunes</li>
+<li>Hacer revisión cruzada con otro grupo</li>
+</ol>
+<p><strong>Material de apoyo</strong></p>
+<ul>
+<li><a href="https://profile.es/blog/exprimiendo-swagger/">Plantilla Swagger básica</a></li>
+<li><a href="https://www.redhat.com/es/topics/middleware/what-is-middleware">Ejemplo de middleware de autenticación</a></li>
+<li><a href="https://old.chuidiang.org/java/herramientas/test-automaticos/ejemplo-junit.php">Código base de test en JUnit o similar</a></li>
+</ul>
+<p><strong>Diccionario de términos</strong></p>
+<ul>
+<li>JWT: Token que permite autenticación sin mantener sesión</li>
+<li>Test unitario: Prueba que verifica el funcionamiento de una unidad del código</li>
+<li>Swagger: Herramienta para documentar APIs de forma visual e interactiva</li>
+</ul>
+<p><strong>Preguntas de repaso</strong></p>
+<ul>
+<li>¿Qué rutas deben protegerse en una API?</li>
+<li>¿Qué información mínima debe aparecer en la documentación técnica?</li>
+</ul>
+<p><strong>Soporte digital</strong></p>
+<ul>
+<li>IDE</li>
+<li>Swagger UI</li>
+<li>Teams o GitHub para revisión de código</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id16">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">TAREA 5: Presentación y despliegue del proyecto</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta16_132_2" class="block iDevice_content">
+<div class="exe-text"><p>Temporalización: 1 sesión (2 horas)</p>
+<p><strong>Contenido propuesto</strong></p>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=hq9MdQ_u250">Video modelo de presentación final de un proyecto web</a></li>
+<li><a href="https://gist.github.com/Villanuevand/6386899f70346d4580c723232524d35a">Plantilla para README en GitHub (con badges, instrucciones, etc.)</a></li>
+<li><a href="https://coding-boot-camp.github.io/full-stack/es/heroku/heroku-deployment-guide/">Guía visual para despliegue en Heroku o servidor local</a></li>
+</ul>
+<p><strong>Actividades del alumnado</strong></p>
+<ol>
+<li>Subir versión final del proyecto a GitHub</li>
+<li>Preparar presentación oral y mostrar app funcionando</li>
+<li>Compartir enlace del repositorio + demo</li>
+</ol>
+<p><strong>Material de apoyo</strong></p>
+<ul>
+<li><a href="https://www.obsbusiness.school/blog/la-evaluacion-de-un-proyecto-herramienta-clave-para-evitar-el-fracaso">Checklist de revisión final del proyecto</a></li>
+<li><a href="https://www.aluracursos.com/blog/como-escribir-un-readme-increible-en-tu-github">Guía: “Cómo preparar tu README profesional”</a></li>
+<li><a href="https://slidesgo.com/es/slidesgo-school/tips-para-presentaciones/como-poner-el-broche-final-a-tu-presentacion-consejos-para-las-ultimas-diapositivas">Diapositiva modelo para presentación final</a></li>
+</ul>
+<p><strong>Diccionario de términos</strong></p>
+<ul>
+<li>Despliegue: Publicación de una app para su acceso por parte de usuarios</li>
+<li>README: Documento que acompaña un repositorio y explica cómo usarlo</li>
+<li>Demo: Demostración del funcionamiento de una app</li>
+</ul>
+<p><strong>Preguntas de repaso</strong></p>
+<ul>
+<li>¿Qué pasos hay para desplegar tu app en la nube?</li>
+<li>¿Qué elementos debe tener una buena presentación final?</li>
+</ul>
+<p><strong>Soporte digital</strong></p>
+<ul>
+<li>GitHub</li>
+<li>Heroku / Docker / XAMPP</li>
+<li>PowerPoint o Canva</li>
+<li>Plataforma del centro para subir vídeo o demo</li>
+</ul></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="6_atribucin_y_fichero_descargable.html" class="prev"><span><span>&laquo; </span>Anterior</span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
